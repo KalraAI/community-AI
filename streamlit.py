@@ -1356,9 +1356,9 @@ if st.session_state.page == "video":
     st.title("🎥 Westport Smiles – Demo Video")
     st.markdown("""
         <video controls preload="metadata" style="width:100%;max-height:480px">
-            <source src="https://westport-videos.2-28-66-181.sslip.io/final-app-demo.mov">
+            <source src="https://westport-videos.178-104-55-215.sslip.io/final-app-demo.mov">
         </video>
-        <p><a href="https://westport-videos.2-28-66-181.sslip.io/final-app-demo.mov">Download the video file (.mov)</a></p>
+        <p><a href="https://westport-videos.178-104-55-215.sslip.io/final-app-demo.mov">Download the video file (.mov)</a></p>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
         st.query_params.clear()
@@ -1372,9 +1372,9 @@ if st.session_state.page == "animated_video":
     st.title("🎬 Westport Smiles – Animated Video")
     st.markdown("""
         <video controls preload="metadata" style="width:100%;max-height:480px">
-            <source src="https://westport-videos.2-28-66-181.sslip.io/animated-video.mov">
+            <source src="https://westport-videos.178-104-55-215.sslip.io/animated-video.mov">
         </video>
-        <p><a href="https://westport-videos.2-28-66-181.sslip.io/animated-video.mov">Download the video file (.mov)</a></p>
+        <p><a href="https://westport-videos.178-104-55-215.sslip.io/animated-video.mov">Download the video file (.mov)</a></p>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
         st.query_params.clear()
