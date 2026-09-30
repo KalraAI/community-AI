@@ -936,6 +936,7 @@ if st.session_state.page == "donate":
     st.write("https://givebutter.com/america-smiles-westport-dbnjrp")
     if st.button("Back"):
         st.session_state.page = "landing"
+        st.rerun()
 
 # ================= APP PAGE =================
 if st.session_state.page == "app":
@@ -1352,8 +1353,10 @@ if st.session_state.page == "app":
 if st.session_state.page == "video":
     st.title("🎥 Westport Smiles – Demo Video")
     st.markdown("""
-        <iframe src="https://drive.google.com/file/d/1uMMOggdCbPsxMTtAtL976lLQngDGqIFq/preview"
-            width="100%" height="480" allow="autoplay"></iframe>
+        <video controls preload="metadata" style="width:100%;max-height:480px">
+            <source src="https://westport-videos.2-28-66-181.sslip.io/final-app-demo.mov" type="video/quicktime">
+            Video unavailable - <a href="https://westport-videos.2-28-66-181.sslip.io/final-app-demo.mov">download the file</a>.
+        </video>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
         st.session_state.page = "landing"
@@ -1365,8 +1368,10 @@ if st.session_state.page == "video":
 if st.session_state.page == "animated_video":
     st.title("🎬 Westport Smiles – Animated Video")
     st.markdown("""
-        <iframe src="https://drive.google.com/file/d/1WbEeFdCUM-eIp2Xsd6gM24Di_GbCAnVC/preview"
-            width="100%" height="480" allow="autoplay"></iframe>
+        <video controls preload="metadata" style="width:100%;max-height:480px">
+            <source src="https://westport-videos.2-28-66-181.sslip.io/animated-video.mov" type="video/quicktime">
+            Video unavailable - <a href="https://westport-videos.2-28-66-181.sslip.io/animated-video.mov">download the file</a>.
+        </video>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
         st.session_state.page = "landing"
