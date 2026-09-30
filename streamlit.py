@@ -935,6 +935,7 @@ if st.session_state.page == "donate":
     st.write("If you would like to support America Smiles Inc, head to givebutter.com!")
     st.write("https://givebutter.com/america-smiles-westport-dbnjrp")
     if st.button("Back"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
 
@@ -1343,6 +1344,7 @@ if st.session_state.page == "app":
 
     # ---------- NAVIGATION ----------
     if st.button("⬅ Back to Home"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
 
@@ -1359,6 +1361,7 @@ if st.session_state.page == "video":
         </video>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
     show_footer()
@@ -1374,6 +1377,7 @@ if st.session_state.page == "animated_video":
         </video>
     """, unsafe_allow_html=True)
     if st.button("⬅ Back to Home"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
     show_footer()
@@ -1397,6 +1401,7 @@ if st.session_state.page == "AI Resources":
 - **Understood.org: Responsible AI Use** — https://www.understood.org/en/articles/ai-responsible-use-students  
 """)
     if st.button("⬅ Back to Home"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
     show_footer()
@@ -1437,6 +1442,7 @@ The **"Pink Fluffy Unicorns"** earned a **Silver Medal** at the North American S
 ✨ *Please join us in celebrating these amazing milestones!*
 """)
     if st.button("⬅ Back to Home"):
+        st.query_params.clear()
         st.session_state.page = "landing"
         st.rerun()
     show_footer()
